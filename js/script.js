@@ -103,6 +103,8 @@ console.log(categories);
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
        var chosenCategoryShortName = chooseRandomCategory(categories);console.log(categories);
+       var newShortName=chosenCategoryShortName.short_name;
+       newShortName="'"+newShortName+"'";
 
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -116,7 +118,7 @@ console.log(categories);
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"short_name",chosenCategoryShortName.short_name);
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName",newShortName);
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
